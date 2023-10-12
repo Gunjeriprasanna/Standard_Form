@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Admission form</title>
+  <Style>
+    #one:hover{
+        background-color: rgb(54, 73, 217);
+        scale: 1.3;
+        color: white;
+
+    }
+    #one{
+        border-radius: 50px;
+    }
+    .Prasanna{
+        color :black;
+        font-size: 20px;
+        border: 4px solid hsl(0, 3%, 6%);
+        background-color: cornflowerblue;
+        text-align: center;
+    }
+    .three{
+        /* border-color: rgb(154, 154, 161); */
+        background-color: rgb(220, 220, 179);
+        width: 30%;
+        border-radius: 40px;
+        border: 4px solid rgb(131, 131, 132);
+        padding-left: 0px 2px;
+       
+    }
+    body{
+        background-color: #747d7d;
+    }
+    #mid,#mid2{
+        text-align: justify;
+        
+    }
+    #mid2{
+        padding-top: 30px;
+    }
+    .mid3{
+        float:right;
+        padding-right: 100px;
+    }
+    #DOB{
+        margin-right: 138px;
+        padding-right: 20px;
+        
+    }
+   
+  </Style>
+    
+</head>
+<center>
+<body>
+    <form action="userMassage.html">
+        
+       
+        <fieldset class="three" >
+            <legend class="Prasanna" co>Personal Details</legend>
+            <div id="mid2">
+        <label for="Name">Frist Name:</label> 
+        <input type="text" required placeholder="Ex:Prasanna" id="Name" name="name" class="mid3"> <br> <br>
+
+        <label for="Name">Middle Name:</label> 
+        <input type="text"  placeholder="Ex:Ramachandra" id="Name" name="name" class="mid3"> <br> <br>
+        
+        <label for="Name">Last Name:</label> 
+        <input type="text" required placeholder="Ex:Gunjeri" id="Name" name="name" class="mid3"> <br> <br>
+        
+        <label for="Email">Email:</label>
+        <input type="text" placeholder="Ex:Prasanna@gmial.com" id="email" name="email" class="mid3"><br><br>
+
+        
+        <label for="DOB">DOB:</label>
+        <input type="date" id="DOB" class="mid3">
+    </div><br><br><br><br>
+    </fieldset>
+
+    <fieldset class="three">
+        <legend class="Prasanna">Education Details</legend>
+        <div id="mid">
+            
+            <label for="">Department:</label><br><br>
+
+            <input type="radio" id="cs" name="Department">
+            <label for="cs" >CS</label>
+
+            <input type="radio" id="is" name="Department">
+            <label for="is" >IS</label>
+
+            <input type="radio" id="ei" name="Department">
+            <label for="ei" >EI</label>
+
+            <input type="radio" id="ec" name="Department">
+            <label for="ec" >EC</label> <br><br>
+
+            <label for="yop">YOG:</label>
+            <input list="yog" type="text" id="yop" name="yop">
+                <datalist id="yog">
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                   
+                </datalist><br><br>
+                <label for="">Skills</label><br>
+                <input type="checkbox" id="html" >
+                <label for="html">HTML</label><br>
+
+                <input type="checkbox" id="css">
+                <label for="css">CSS</label><br>
+
+                <input type="checkbox" id="js">
+                <label for="js">JAVASCRIPT</label><br>
+
+                <input type="checkbox" id="sql"> 
+                <label for="sql">SQL</label><br>
+               
+            </div>
+        </fieldset><br>
+        <input type="submit" id="one">
+
+    </form>
+</body>
+</center>
+</html>
